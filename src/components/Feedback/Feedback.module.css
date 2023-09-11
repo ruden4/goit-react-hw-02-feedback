@@ -1,0 +1,83 @@
+@import-normalize;
+*,
+*::before,
+*::after {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,h1,h2,h3,h4,p,li {
+  margin: 0;
+  list-style: none;
+}
+/* ******** */
+body {
+     background-color: rgb(34, 34, 34);
+}
+.container {
+    background-color: rgb(104, 206, 143);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 500px;
+}
+.feedTitle {
+font-size: 48px;
+}
+.feedBtnList {
+display: flex;
+gap: 50px;
+width: 100%;
+justify-content: center;
+}
+.btnListItem {
+
+}
+.feedBtn {
+    font-size: 32px;
+    padding: 10px 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(34, 34, 34);
+    color: rgb(104, 206, 143);
+    transition-duration: 300ms;
+}
+.feedBtn:hover {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(104, 206, 143);
+    color: rgb(34, 34, 34);
+}
+
+.feedStatsList {
+display: flex;
+gap: 40px;
+
+}
+.statName {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.statValue {
+    font-size: 42px;
+    font-weight: 900;
+
+    border-radius: 20px;
+    padding: 10px 50px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(104, 206, 143);
+    color: rgb(34, 34, 34);
+}
