@@ -12,23 +12,39 @@ ol[class] {
 body,h1,h2,h3,h4,p,li {
   margin: 0;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* ******** */
+/* /* ****** */
 body {
      background-color: rgb(34, 34, 34);
 }
 .container {
     background-color: rgb(104, 206, 143);
-    width: 100%;
-    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 500px;
+    border-radius: 50px;
+    margin-top: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    -webkit-box-shadow: 20px 20px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 20px 20px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 20px 20px 5px 0px rgba(0,0,0,0.75);
 }
 .feedTitle {
 font-size: 48px;
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
+gap: 20px;
+justify-content: center;
+align-items: center;
+text-align: center;
 }
 .feedBtnList {
 display: flex;
@@ -36,16 +52,11 @@ gap: 50px;
 width: 100%;
 justify-content: center;
 }
-.btnListItem {
-
-}
 .feedBtn {
     font-size: 32px;
     padding: 10px 40px;
     width: 100%;
     border: none;
-    outline: none;
-    cursor: pointer;
     border-radius: 10px;
     border: 2px solid rgb(0, 0, 0);
     background-color: rgb(34, 34, 34);
@@ -56,12 +67,11 @@ justify-content: center;
     border: 2px solid rgb(0, 0, 0);
     background-color: rgb(104, 206, 143);
     color: rgb(34, 34, 34);
+    scale: 1.1;
 }
-
 .feedStatsList {
 display: flex;
 gap: 40px;
-
 }
 .statName {
     display: flex;
@@ -74,10 +84,19 @@ gap: 40px;
 .statValue {
     font-size: 42px;
     font-weight: 900;
-
     border-radius: 20px;
     padding: 10px 50px;
     border: 2px solid rgb(0, 0, 0);
     background-color: rgb(104, 206, 143);
     color: rgb(34, 34, 34);
+    text-align: center;
+}
+.statValueOther {
+  font-size: 42px;
+  font-weight: 900;
+  border-radius: 20px;
+  padding: 10px 50px;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(34, 34, 34);
+  color: rgb(104, 206, 143);
 }
